@@ -12,14 +12,14 @@ function Grid() {
   const [timeframe, setTimeframe] = useState("daily");
 
   return (
-    <div className="mainGrid">
+    <div className="dashboard">
       <Rectangle setTimeframe={setTimeframe} />
-      <Square activity={work} className={"square1"} number={0} timeframe={timeframe} />
-      <Square activity={play} className={"square2"} number={1} timeframe={timeframe} />
-      <Square activity={study} className={"square3"} number={2} timeframe={timeframe} />
-      <Square activity={exercise} className={"square4"} number={3} timeframe={timeframe} />
-      <Square activity={social} className={"square5"} number={4} timeframe={timeframe} />
-      <Square activity={selfcare} className={"square6"} number={5} timeframe={timeframe} />
+      <Square activity={work} className={"theme-card--work"} number={0} timeframe={timeframe} />
+      <Square activity={play} className={"theme-card--play"} number={1} timeframe={timeframe} />
+      <Square activity={study} className={"theme-card--study"} number={2} timeframe={timeframe} />
+      <Square activity={exercise} className={"theme-card--exercise"} number={3} timeframe={timeframe} />
+      <Square activity={social} className={"theme-card--social"} number={4} timeframe={timeframe} />
+      <Square activity={selfcare} className={"theme-card--selfcare"} number={5} timeframe={timeframe} />
     </div>
   );
 }

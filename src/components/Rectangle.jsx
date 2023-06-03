@@ -43,27 +43,27 @@ const Rectangle = ({setTimeframe}) => {
     }
     
   return (
-      <div className="rectangle">
-          <div className="rectanglepurple">
-              <img src={jeremy} alt="" />
+      <div className="profile-content">
+          <div className="user-details">
+              <img src={jeremy} alt="User icon" />
               <div>
                   <p>Report for</p>
                   <h1>Jeremy Robson</h1>
               </div>
           </div>
-          <div className="rectangledark">
-              <h3 id="daily"
+          <div className="time-selection">
+              <p id="daily"
                   onClick={(e) => fetchtimeframe(e)}
                   style={{ color: active.daily ? "white" : " hsl(235, 45%, 61%)" }}
-              >Daily</h3>
-              <h3 id="weekly"
+              >Daily</p>
+              <p id="weekly"
                   onClick={(e) => fetchtimeframe(e)}
                   style={{ color: active.weekly ? "white" : " hsl(235, 45%, 61%)" }}
-              >Weekly</h3>
-              <h3 id="monthly"
+              >Weekly</p>
+              <p id="monthly"
                   onClick={(e) => fetchtimeframe(e)}
                   style={{ color: active.monthly ? "white" : " hsl(235, 45%, 61%)" }}
-              >Monthly</h3>
+              >Monthly</p>
           </div>
       </div>
   )
